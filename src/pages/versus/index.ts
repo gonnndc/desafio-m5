@@ -158,10 +158,25 @@ export function initPageVersus(params) {
           .computerHand {
             top:0px;
             transform: rotate(180deg);
+            height:200px;
           }
           .myHand {
             bottom:0px;
+            height:200px;
           }
+
+          @media (min-width:769px){
+            .computerHand, .myHand {
+              height:320px;
+            }
+          }
+
+          @media (min-width:1200px){
+            .computerHand, .myHand {
+              height:400px;
+            }
+          }
+
 
           .background{
             width:100%;

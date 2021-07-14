@@ -30,6 +30,7 @@ export function initButtonComp(params) {
             font-size:50px;
             color:#Fafafa;
             font-family: 'Odibee Sans', cursive;
+            z-index:20;
           }
           
       `;
@@ -43,6 +44,7 @@ export function initButtonComp(params) {
         }
         `;
       }
+
 
       this.textContent = this.getAttribute("text");
       button.addEventListener("click", () => {

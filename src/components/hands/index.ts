@@ -26,9 +26,13 @@ export const initHandsComp = (params) => {
             `;
 
       style.innerHTML = `
+
+              div{
+                z-index:0;
+              }
                img{
-                    width:100px;
-                    height:200px;
+                    width:80px;
+                    height:180px;
                 }
 
                 @media (min-width:769px){
@@ -57,14 +61,6 @@ export const initHandsComp = (params) => {
           img{
             width:250px;
             height:350px;
-          }
-        }
-
-
-        @media (min-width:1000px){
-          img{
-            width:300px;
-            height:400px;
           }
         }
         

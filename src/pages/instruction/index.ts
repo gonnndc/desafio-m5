@@ -32,6 +32,8 @@ export function initPageInstruction(params) {
             flex-direction:column;
             align-items:center;
           }
+
+
           .container{
             width:90%;
             max-width:500px;
