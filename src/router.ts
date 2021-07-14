@@ -9,19 +9,19 @@ import { state } from "./state";
 
 const routes = [
   {
-    path: /\/welcome/,
+    path: /\/desafio-m5\/welcome/,
     component: initPageWelcome,
   },
   {
-    path: /\/instruction/,
+    path: /\/desafio-m5\/instruction/,
     component: initPageInstruction,
   },
   {
-    path: /\/election/,
+    path: /\/desafio-m5\/election/,
     component: initPageElection,
   },
   {
-    path: /\/versus/,
+    path: /\/desafio-m5\/versus/,
     component: initPageVersus,
   },
 ];
@@ -47,9 +47,7 @@ export function initRouter(container: Element) {
     }
   }
 
-  if (location.pathname == "/") {
-    handleRoute("/welcome");
-  } else {
-    handleRoute(location.pathname);
+  if (location.pathname == "/desafio-m5/") {
+    handleRoute("/desafio-m5/welcome");
   }
 }

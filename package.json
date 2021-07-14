@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir build",
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /desafio-m5",
     "help": "parcel build --help",
     "deploy": "gh-pages -d build"
   },

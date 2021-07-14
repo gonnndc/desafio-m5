@@ -73,7 +73,7 @@ export function initPageElection(params) {
           if (n < 0) {
             preload.style.border = "20px solid #141414";
             clearInterval(id);
-            params.goTo("/welcome");
+            params.goTo("/desafio-m5/welcome");
           }
           n--;
         }, time);
