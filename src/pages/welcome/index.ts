@@ -36,6 +36,8 @@ export function initPageWelcome(params) {
         .container__elements{
           display:flex;
           flex-direction:column;
+          gap:30px;
+          z-index:10;
         }
 
         .container__imgs div{

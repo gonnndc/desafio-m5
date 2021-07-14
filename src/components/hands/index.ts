@@ -34,7 +34,7 @@ export const initHandsComp = (params) => {
                 @media (min-width:769px){
                   img{
                     width:200px;
-                    height:350px;
+                    height:250px;
                   }
                 }
                 
@@ -51,16 +51,16 @@ export const initHandsComp = (params) => {
       const tijera: any = div.querySelector(".tijeraEl");
 
       if (this.getAttribute("variant") == "election") {
-
         style.innerHTML += `
 
         @media (min-width:769px){
           img{
             width:400px;
+            height:350px;
           }
         }
         
-        `
+        `;
 
         papel.addEventListener("click", () => {
           piedra.classList.toggle("piedraDown");

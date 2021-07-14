@@ -5,7 +5,6 @@ import { initPageElection } from "./pages/election";
 import { initPageVersus } from "./pages/versus/index";
 import { initPageInstruction } from "./pages/instruction/index";
 import { initPageWelcome } from "./pages/welcome/index";
-import { state } from "./state";
 
 const routes = [
   {
