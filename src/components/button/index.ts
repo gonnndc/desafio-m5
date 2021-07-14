@@ -54,7 +54,7 @@ export function initButtonComp(params) {
           params.goTo("/desafio-m5/election");
         }
         if (this.textContent == "Volver a jugar") {
-          params.goTo("/desafio-m5/welcome");
+          params.goTo("/desafio-m5/election");
         }
         if (this.textContent == "Reiniciar puntaje") {
           state.setState({

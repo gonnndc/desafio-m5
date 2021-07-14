@@ -55,32 +55,40 @@ export const initHandsComp = (params) => {
 
         @media (min-width:769px){
           img{
-            width:400px;
+            width:250px;
             height:350px;
+          }
+        }
+
+
+        @media (min-width:1000px){
+          img{
+            width:300px;
+            height:400px;
           }
         }
         
         `;
 
         papel.addEventListener("click", () => {
-          piedra.classList.toggle("piedraDown");
-          tijera.classList.toggle("tijeraDown");
+          piedra.classList.add("piedraDown");
+          tijera.classList.add("tijeraDown");
           setTimeout(() => {
             state.setMove("papel");
             params.goTo("/desafio-m5/versus");
           }, 1000);
         });
         piedra.addEventListener("click", () => {
-          papel.classList.toggle("papelDown");
-          tijera.classList.toggle("tijeraDown");
+          papel.classList.add("papelDown");
+          tijera.classList.add("tijeraDown");
           setTimeout(() => {
             state.setMove("piedra");
             params.goTo("/desafio-m5/versus");
           }, 1000);
         });
         tijera.addEventListener("click", () => {
-          piedra.classList.toggle("piedraDown");
-          papel.classList.toggle("papelDown");
+          piedra.classList.add("piedraDown");
+          papel.classList.add("papelDown");
           setTimeout(() => {
             state.setMove("tijera");
             params.goTo("/desafio-m5/versus");

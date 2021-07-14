@@ -1,4 +1,3 @@
-import { state } from "../../state";
 
 export function initPageElection(params) {
   class PageElection extends HTMLElement {
