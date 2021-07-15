@@ -46,7 +46,6 @@ export function initRouter(container: Element) {
     }
   }
 
-    handleRoute("/desafio-m5/welcome"||location.pathname);
+    handleRoute("/desafio-m5/welcome");
     
-
 }

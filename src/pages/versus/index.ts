@@ -137,7 +137,12 @@ export function initPageVersus(params) {
 
           @media (min-width:769px){
             .win, .lose {
-              position:static;
+              height:200px;
+            }
+          }
+
+          @media (min-width:1200px){
+            .win, .lose {
               height:250px;
             }
           }
@@ -167,7 +172,7 @@ export function initPageVersus(params) {
 
           @media (min-width:769px){
             .computerHand, .myHand {
-              height:320px;
+              height:250px;
             }
           }
 
@@ -184,9 +189,8 @@ export function initPageVersus(params) {
             z-index:1;
             display:flex;
             flex-direction:column;
-            justify-content:center;
+            justify-content:space-evenly;
             align-items:center;
-            gap:20px;
           }
 
           .card{

@@ -27,9 +27,7 @@ export const initHandsComp = (params) => {
 
       style.innerHTML = `
 
-              div{
-                z-index:0;
-              }
+              
                img{
                     width:80px;
                     height:180px;
@@ -38,7 +36,8 @@ export const initHandsComp = (params) => {
                 @media (min-width:769px){
                   img{
                     width:200px;
-                    height:250px;
+                    height:300px;
+                    z-index:0;
                   }
                 }
                 
