@@ -8,19 +8,19 @@ import { initPageWelcome } from "./pages/welcome/index";
 
 const routes = [
   {
-    path: /\/desafio-m5\/welcome/,
+    path: /\//,
     component: initPageWelcome,
   },
   {
-    path: /\/desafio-m5\/instruction/,
+    path: /\/instruction/,
     component: initPageInstruction,
   },
   {
-    path: /\/desafio-m5\/election/,
+    path: /\/election/,
     component: initPageElection,
   },
   {
-    path: /\/desafio-m5\/versus/,
+    path: /\/versus/,
     component: initPageVersus,
   },
 ];
@@ -28,7 +28,7 @@ const routes = [
 export function initRouter(container: Element) {
   function goTo(path) {
     history.pushState({}, "", path);
-    handleRoute(path);
+    handleRoute(path.replace("/desafio-m5/", ""));
   }
 
   initHandsComp({ goTo: goTo });
@@ -46,6 +46,5 @@ export function initRouter(container: Element) {
     }
   }
 
-    handleRoute("/desafio-m5/welcome");
-    
+  handleRoute(location.pathname.replace("/desafio-m5/", "/"));
 }

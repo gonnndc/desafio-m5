@@ -70,7 +70,7 @@ export const initHandsComp = (params) => {
           tijera.classList.add("tijeraDown");
           setTimeout(() => {
             state.setMove("papel");
-            params.goTo("/desafio-m5/versus");
+            params.goTo("/versus");
           }, 1000);
         });
         piedra.addEventListener("click", () => {
@@ -78,7 +78,7 @@ export const initHandsComp = (params) => {
           tijera.classList.add("tijeraDown");
           setTimeout(() => {
             state.setMove("piedra");
-            params.goTo("/desafio-m5/versus");
+            params.goTo("/versus");
           }, 1000);
         });
         tijera.addEventListener("click", () => {
@@ -86,7 +86,7 @@ export const initHandsComp = (params) => {
           papel.classList.add("papelDown");
           setTimeout(() => {
             state.setMove("tijera");
-            params.goTo("/desafio-m5/versus");
+            params.goTo("/versus");
           }, 1000);
         });
       }

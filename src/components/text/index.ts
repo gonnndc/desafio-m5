@@ -78,6 +78,31 @@ export function initTextComp() {
             `;
       }
 
+      if (this.getAttribute("variant") == "recovery") {
+        div.innerHTML = `
+                <h3 class="election">
+
+                Recuperando los datos de su partida anterior
+
+                </h3>
+                `;
+        style.innerHTML = `
+                .election {
+                    font-size : 30px;
+                    color: #141414;
+                    letter-spacing: 3px;
+                    font-family: 'Odibee Sans', cursive;
+                    text-align:center;
+                }
+                
+                @media (min-width:769px){
+                    .election{
+                      font-size : 40px;
+                    }
+                  }
+            `;
+      }
+
       shadow.appendChild(div);
       shadow.appendChild(style);
     }

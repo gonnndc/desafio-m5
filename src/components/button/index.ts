@@ -50,13 +50,13 @@ export function initButtonComp(params) {
       button.addEventListener("click", () => {
         localStorage.setItem("state", JSON.stringify(state.getState()));
         if (this.textContent == "Empezar") {
-          params.goTo("/desafio-m5/instruction");
+          params.goTo("/instruction");
         }
         if (this.textContent == "Jugar") {
-          params.goTo("/desafio-m5/election");
+          params.goTo("/election");
         }
         if (this.textContent == "Volver a jugar") {
-          params.goTo("/desafio-m5/election");
+          params.goTo("/election");
         }
         if (this.textContent == "Reiniciar puntaje") {
           state.setState({
@@ -66,7 +66,7 @@ export function initButtonComp(params) {
               myWin: 0,
             },
           });
-          params.goTo("/desafio-m5/welcome");
+          params.goTo("/");
         }
       });
 
