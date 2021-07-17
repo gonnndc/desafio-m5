@@ -64,5 +64,6 @@ export const state = {
         },
       });
     }
+    localStorage.setItem("state", JSON.stringify(state.getState()));
   },
 };

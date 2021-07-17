@@ -77,8 +77,8 @@ export function initPageWelcome(params) {
       `;
 
       const result = localStorage.getItem("state");
-      const { myWin, computerWin } = state.data.history
-      if (result && !computerWin && !myWin) {
+      // const { myWin, computerWin } = state.data.history
+      if (result) {
         modal.innerHTML = `<emergent-comp></emergent-comp>`;
         div.appendChild(modal);
         containerElements.style.opacity = "0.5";
@@ -89,6 +89,7 @@ export function initPageWelcome(params) {
           modal.removeAttribute('class')
           containerElements.style.opacity = "1";
           containerImgs.style.opacity = "1";
+          containerImgs.style.transition = "ease 2s";;
           containerElements.style.display = "flex";
         }, 2500);
       }

@@ -48,7 +48,7 @@ export function initButtonComp(params) {
 
       this.textContent = this.getAttribute("text");
       button.addEventListener("click", () => {
-        localStorage.setItem("state", JSON.stringify(state.getState()));
+        
         if (this.textContent == "Empezar") {
           params.goTo("/instruction");
         }
@@ -66,6 +66,7 @@ export function initButtonComp(params) {
               myWin: 0,
             },
           });
+          localStorage.removeItem("state")
           params.goTo("/");
         }
       });
