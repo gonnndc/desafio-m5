@@ -46,9 +46,5 @@ export function initRouter(container: Element) {
     }
   }
 
-  if (location.pathname == "/desafio-m5/") {
-    handleRoute(location.pathname.replace("/desafio-m5/", "/"));
-  } else {
-    handleRoute("/desafio-m5/");
-  }
+  handleRoute(location.pathname.replace("/desafio-m5/", "/"));
 }
